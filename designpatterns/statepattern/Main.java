@@ -1,6 +1,6 @@
 package designpatterns.statepattern;
 
-public class StatePattern {
+public class Main {
   // use-case : Music Player
-  
+
 }
