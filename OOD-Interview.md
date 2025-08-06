@@ -12,13 +12,12 @@
 - [Link](https://bytebytego.com/courses/object-oriented-design-interview)
 
 1. Parking Lot
-2. Elevator System
-3. ATM
-4. Movie Ticket Booking System
-5. Unix File Search System
-6. Vending Machine
-7. Tic-Tac-Toe Game
-8. Blackjack Game
-9. Shipping Locker System
-10. Restaurant Management System
-11. Grocery Store Management System
+1. Movie Ticket Booking System
+1. Unix File Search System
+1. Vending Machine
+1. Elevator System
+1. Grocery Store Management System
+1. Tic-Tac-Toe Game
+1. Blackjack Game
+1. Shipping Locker System
+1. Restaurant Management System
