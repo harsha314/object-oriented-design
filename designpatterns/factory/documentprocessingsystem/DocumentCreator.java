@@ -2,9 +2,13 @@ package designpatterns.factory.documentprocessingsystem;
 
 import designpatterns.factory.documentprocessingsystem.documents.Document;
 
-public class DocumentCreator {
-  public Document createDocument(Class<?> clazz) {
+public abstract class DocumentCreator {
+  public abstract Document createDocument();
 
-    return null;
+  public final void processDocument() {
+    Document document = createDocument();
+    document.open();
+    document.save();
+    document.close();
   }
 }

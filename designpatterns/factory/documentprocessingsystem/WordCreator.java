@@ -1,10 +1,13 @@
 package designpatterns.factory.documentprocessingsystem;
 
 import designpatterns.factory.documentprocessingsystem.documents.Document;
-import designpatterns.factory.documentprocessingsystem.documents.PDF;
+import designpatterns.factory.documentprocessingsystem.documents.WordDocument;
 
-public class PdfCreator extends DocumentCreator {
+public class WordCreator extends DocumentCreator {
+
+  @Override
   public Document createDocument() {
-    return new PDF();
+    return new WordDocument();
   }
+
 }
