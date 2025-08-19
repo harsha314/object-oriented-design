@@ -1,6 +1,6 @@
-package designpatterns.statepattern.states;
+package designpatterns.statepattern.musicplayer.states;
 
-public class ReadyState extends State {
+public class PlayingState extends State {
 
   @Override
   public String onLock() {

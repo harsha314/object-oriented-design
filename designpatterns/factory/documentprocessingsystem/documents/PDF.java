@@ -9,7 +9,6 @@ public class PDF implements Document {
 
   @Override
   public void save() {
-    // TODO Auto-generated method stub
     System.out.println("Saving PDF Document");
   }
 

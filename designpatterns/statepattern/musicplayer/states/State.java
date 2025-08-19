@@ -1,6 +1,6 @@
-package designpatterns.statepattern.states;
+package designpatterns.statepattern.musicplayer.states;
 
-import designpatterns.statepattern.ui.Player;
+import designpatterns.statepattern.musicplayer.ui.Player;
 
 public abstract class State {
   Player player;

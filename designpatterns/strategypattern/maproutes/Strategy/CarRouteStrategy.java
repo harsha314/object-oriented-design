@@ -1,4 +1,4 @@
-package designpatterns.strategypattern.Strategy;
+package designpatterns.strategypattern.maproutes.Strategy;
 
 import java.util.List;
 

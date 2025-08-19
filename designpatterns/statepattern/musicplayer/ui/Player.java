@@ -1,10 +1,10 @@
-package designpatterns.statepattern.ui;
+package designpatterns.statepattern.musicplayer.ui;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import designpatterns.statepattern.states.ReadyState;
-import designpatterns.statepattern.states.State;
+import designpatterns.statepattern.musicplayer.states.ReadyState;
+import designpatterns.statepattern.musicplayer.states.State;
 
 public class Player {
   private State state;

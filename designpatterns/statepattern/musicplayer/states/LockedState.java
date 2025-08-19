@@ -1,4 +1,4 @@
-package designpatterns.statepattern.states;
+package designpatterns.statepattern.musicplayer.states;
 
 public class LockedState extends State {
 
