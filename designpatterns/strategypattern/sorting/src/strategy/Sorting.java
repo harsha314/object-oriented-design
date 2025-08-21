@@ -1,4 +1,4 @@
-package designpatterns.strategypattern.sorting.strategy;
+package designpatterns.strategypattern.sorting.src.strategy;
 
 import java.util.List;
 
