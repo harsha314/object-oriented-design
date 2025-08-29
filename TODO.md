@@ -24,7 +24,7 @@
 ## Day 3: Structural Patterns (Part 1)
 
 - [ ] Adapter Pattern
-  - [ ] Implement Legacy E-commerce System
+  - [x] Implement Legacy E-commerce System
   - [ ] Implement Media Player
 - [ ] Bridge Pattern
   - [ ] Implement Device Controller
