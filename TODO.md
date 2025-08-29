@@ -2,18 +2,18 @@
 
 ## Day 1: Creational Patterns (Part 1)
 
-- [ ] Singleton Pattern
-  - [ ] Implement Logger System
-  - [ ] Implement Database Connection Pool
-- [ ] Factory Method Pattern
-  - [ ] Implement Document Processing System
-  - [ ] Implement Logistics and Transport System
+- [x] Singleton Pattern
+  - [x] Implement Logger System
+  - [x] Implement Database Connection Pool
+- [x] Factory Method Pattern
+  - [x] Implement Document Processing System
+  - [x] Implement Logistics and Transport System
 
 ## Day 2: Creational Patterns (Part 2)
 
 - [ ] Abstract Factory Pattern
   - [ ] Implement UI Toolkit
-  - [ ] Implement Furniture Shop
+  - [x] Implement Furniture Shop
 - [ ] Builder Pattern
   - [ ] Implement Computer Assembly
   - [ ] Implement Pizza Ordering System
