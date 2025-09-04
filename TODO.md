@@ -27,16 +27,16 @@
   - [x] Implement Legacy E-commerce System
   - [ ] Implement Media Player
 - [ ] Bridge Pattern
-  - [ ] Implement Device Controller
+  - [x] Implement Device Controller
   - [ ] Implement Shape Rendering
 - [ ] Composite Pattern
-  - [ ] Implement File System
+  - [x] Implement File System
   - [ ] Implement Organizational Hierarchy
 
 ## Day 4: Structural Patterns (Part 2)
 
 - [ ] Decorator Pattern
-  - [ ] Implement Coffee Shop Order
+  - [x] Implement Coffee Shop Order
   - [ ] Implement Text Editor Formatting
 - [ ] Facade Pattern
   - [ ] Implement Home Theater System
