@@ -40,13 +40,13 @@
   - [ ] Implement Text Editor Formatting
 - [ ] Facade Pattern
   - [ ] Implement Home Theater System
-  - [ ] Implement Compiler Subsystem
+  - [x] Implement Compiler Subsystem
 - [ ] Flyweight Pattern
   - [ ] Implement Character Formatting
   - [x] Implement Tree Rendering
 - [ ] Proxy Pattern
   - [ ] Implement Image Loading
-  - [ ] Implement Access Control
+  - [x] Implement Access Control
 
 ## Day 5: Behavioral Patterns (Part 1)
 
