@@ -55,7 +55,7 @@
   - [ ] Implement Purchase Approval Workflow
 - [ ] Command Pattern
   - [ ] Implement Text Editor
-  - [ ] Implement Remote Control
+  - [x] Implement Remote Control
 - [ ] Iterator Pattern
   - [ ] Implement Custom Collection Traversal
   - [ ] Implement Social Media Feed
@@ -69,7 +69,7 @@
   - [ ] Implement Calculator Application
   - [ ] Implement Text Editor History
 - [ ] Observer Pattern
-  - [ ] Implement Stock Market Application
+  - [x] Implement Stock Market Application
   - [ ] Implement Social Media Notifications
 
 ## Day 7: Behavioral Patterns (Part 3)
