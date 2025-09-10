@@ -1,4 +1,4 @@
-package com.designpatterns.structuralpatterns.facade;
+package com.designpatterns.structuralpatterns.facade.compiler;
 
 public class Compiler {
   private final Lexer lexer;
