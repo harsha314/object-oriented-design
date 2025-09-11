@@ -75,7 +75,7 @@
 ## Day 7: Behavioral Patterns (Part 3)
 
 - [ ] State Pattern
-  - [ ] Implement Vending Machine
+  - [x] Implement Vending Machine
   - [ ] Implement Traffic Light
 - [ ] Strategy Pattern
   - [ ] Implement Sorting Algorithms
