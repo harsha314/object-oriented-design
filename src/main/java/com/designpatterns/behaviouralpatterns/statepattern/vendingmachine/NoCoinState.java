@@ -16,20 +16,17 @@ public class NoCoinState implements State {
 
   @Override
   public void ejectCoin() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'ejectCoin'");
+    System.out.println("No coin to eject");
   }
 
   @Override
   public void selectItem() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'selectItem'");
+    System.out.println("Please insert a coin first");
   }
 
   @Override
   public void dispense() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'dispense'");
+    System.out.println("Please insert a coin first");
   }
 
 }

@@ -9,14 +9,13 @@ public class HasCoinState implements State {
 
   @Override
   public void insertCoin() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'insertCoin'");
+    System.out.println("Coin already inserted");
   }
 
   @Override
   public void ejectCoin() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'ejectCoin'");
+    System.out.println("Coin returned");
+    this.vendingMachine.setState(this.vendingMachine.getNoCoinState());
   }
 
   @Override
@@ -27,7 +26,6 @@ public class HasCoinState implements State {
 
   @Override
   public void dispense() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'dispense'");
+    System.out.println("Please select an item first");
   }
 }

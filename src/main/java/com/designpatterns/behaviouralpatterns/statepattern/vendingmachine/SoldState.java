@@ -9,20 +9,17 @@ public class SoldState implements State {
 
   @Override
   public void insertCoin() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'insertCoin'");
+    System.out.println("Please wait, item being dispensed");
   }
 
   @Override
   public void ejectCoin() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'ejectCoin'");
+    System.out.println("Sorry, item already being dispensed");
   }
 
   @Override
   public void selectItem() {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'selectItem'");
+    System.out.println("Please wait, item being dispensed");
   }
 
   @Override

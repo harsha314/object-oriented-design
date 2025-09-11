@@ -11,9 +11,9 @@ public class VendingMachine {
 
   public VendingMachine(int itemCount) {
     this.noCoinState = new NoCoinState(this);
-    // this.hasCoinState = new HasCoinState(this);
-    // this.soldState = new SoldState(this);
-    // this.soldOutState = new SoldOutState(this);
+    this.hasCoinState = new HasCoinState(this);
+    this.soldState = new SoldState(this);
+    this.soldOutState = new SoldOutState(this);
 
     this.count = itemCount;
     this.currentState = this.noCoinState;
