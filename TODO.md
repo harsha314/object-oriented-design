@@ -63,8 +63,8 @@
 ## Day 6: Behavioral Patterns (Part 2)
 
 - [ ] Mediator Pattern
-  - [ ] Implement Flight Control Tower
-  - [ ] Implement GUI Component Interaction
+  - [x] Implement Flight Control Tower
+  - [x] Implement GUI Component Interaction
 - [ ] Memento Pattern
   - [ ] Implement Calculator Application
   - [ ] Implement Text Editor History
