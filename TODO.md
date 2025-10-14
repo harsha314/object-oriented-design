@@ -67,7 +67,7 @@
   - [x] Implement GUI Component Interaction
 - [ ] Memento Pattern
   - [ ] Implement Calculator Application
-  - [ ] Implement Text Editor History
+  - [x] Implement Text Editor History
 - [ ] Observer Pattern
   - [x] Implement Stock Market Application
   - [ ] Implement Social Media Notifications
