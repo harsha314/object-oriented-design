@@ -1,0 +1,79 @@
+# LLD Problem Sheet - TODO List
+
+========================
+BEGINNER LEVEL
+========================
+[ ] Design (LLD) Tic-Tac-Toe - Machine Coding - Video
+[ ] Design (LLD) Snake and Ladder Game - Machine Coding - Video
+[ ] Design (LLD) Tetris Game - Machine Coding - Video
+[ ] Design (LLD) Minesweeper - Machine Coding - Video
+[ ] Design (LLD) Chess Game - Machine Coding
+[ ] Design (LLD) Alarm/Alert Service for AWS - Machine Coding
+[ ] Design (LLD) Logging Library (like log4j) - Machine Coding
+[ ] Design (LLD) JSON Parser - Machine Coding - Video
+[ ] Design (LLD) File System - Machine Coding
+[ ] Design (LLD) 2048 Game - Machine Coding
+
+
+
+========================
+INTERMEDIATE LEVEL
+========================
+[ ] Design (LLD) Internet Download Manager (IDM) - Machine Coding Interview
+[ ] Design (LLD) Coupon System for Zepto - Machine Coding Interview
+[ ] Design (LLD) Android Unlock Pattern - Machine Coding Interview
+[ ] Designing a Scalable Database Schema for Reddit-like Comments - Part 1
+[ ] Design (LLD) Sublime Text IDE - Machine Coding
+[ ] Design (LLD) Ngrok Tool - Machine Coding
+[ ] Design (LLD) Rate Limiter - Machine Coding
+[ ] Design (LLD) Thread Pool - Machine Coding
+[ ] Design OYO/Airbnb - Part 1: Database Modelling
+[ ] Design (LLD) Google Calendar Database Model
+[ ] Design (LLD) Google Authenticator - Machine Coding
+[ ] Design (LLD) Amazon Prime Video - Machine Coding
+[ ] Design Online Book Management System - Machine Coding [Asked in Microsoft]
+[ ] Design (LLD) Lift - Machine Coding
+
+
+
+========================
+ADVANCED LEVEL
+========================
+[ ] Design (LLD) AWS S3 Service - Machine Coding
+[ ] Design (LLD) Google Drive - Machine Coding
+[ ] Design Version Control (GitHub) - Database Modelling
+[ ] Design (LLD) Mentorship Platform (like Preplaced) - Machine Coding
+[ ] Design (LLD) Tinder Dating App - Machine Coding
+[ ] Design (LLD) WhatsApp Messenger - Machine Coding
+[ ] Design (LLD) Gmail - Machine Coding
+[ ] Design (LLD) Game Engine (like Unreal) - Machine Coding
+[ ] Design (LLD) Real-Time Chat System with Millions of Users
+[ ] Design (LLD) Video Conferencing App (like Zoom)
+[ ] Design (LLD) Cryptocurrency Exchange Platform
+[ ] Design (LLD) Collaborative Document Editing (Google Docs)
+[ ] Design (LLD) Payment Recommendation System - Machine Coding [Asked in CRED] [Paid]
+[ ] Design (LLD) Alexa - Machine Coding
+
+
+========================
+CONCURRENCY PROBLEMS
+========================
+[ ] Problem I: Thread-Safe Two-Sum Checker - Blog Link
+[ ] Parallel Pascal's Triangle Generation - Blog Link
+[ ] Print Sequentially - Asked in Microsoft SDE-2
+
+
+========================
+PROGRESS SUMMARY
+========================
+Beginner Level:       0 / 10
+Intermediate Level:   0 / 14
+Advanced Level:       0 / 14
+Concurrency Problems: 0 / 3
+---------------------------------
+Total:                0 / 41
+
+Next Steps:
+[ ] Start with Beginner #1 – Tic-Tac-Toe
+[ ] Move sequentially or group by topic (Games, Systems, Libraries, etc.)
+[ ] Add links or notes to completed solutions
