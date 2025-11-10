@@ -16,9 +16,8 @@ public class JSONParser {
   private Object parseValue() {
     TokenType type = current.getTokenType();
     switch (type) {
-      case LEFT_BRACKET:
-
-        break;
+      case LEFT_CURLY_BRACKET:
+        return parseObject();
 
       default:
         break;
@@ -28,7 +27,26 @@ public class JSONParser {
 
   private Map<String, Object> parseObject() {
     Map<String, Object> map = new LinkedHashMap<>();
-    expect(TokenType.LEFT_BRACKET);
+    expect(TokenType.LEFT_CURLY_BRACKET);
+
+    if (current.getTokenType() == TokenType.RIGHT_CURLY_BRACKET) {
+      jsonTokenizer.nextToken();
+      return map;
+    }
+    do {
+      expect(TokenType.STRING);
+      String key = current.getContent();
+      current = jsonTokenizer.nextToken();
+
+      expect(TokenType.COLON);
+      current = jsonTokenizer.nextToken();
+      Object value = parseValue();
+      map.put(key, value);
+      if (current.getTokenType() == TokenType.COMMA) {
+        current = jsonTokenizer.nextToken();
+      } else
+        break;
+    } while (true);
     return map;
   }
 
