@@ -11,7 +11,9 @@ public class JSONParser {
   private Token current;
 
   public Object parse(String input) {
-    return null;
+    jsonTokenizer = new JSONTokenizer(input);
+    current = jsonTokenizer.nextToken();
+    return parseValue();
   }
 
   private Object parseValue() {
@@ -41,6 +43,7 @@ public class JSONParser {
   private Map<String, Object> parseObject() {
     Map<String, Object> map = new LinkedHashMap<>();
     expect(TokenType.LEFT_CURLY_BRACKET);
+    current = jsonTokenizer.nextToken();
 
     if (current.getTokenType() == TokenType.RIGHT_CURLY_BRACKET) {
       jsonTokenizer.nextToken();
@@ -83,7 +86,7 @@ public class JSONParser {
 
   private void expect(TokenType type) {
     if (current.getTokenType() != type) {
-      throw new RuntimeException("");
+      throw new RuntimeException("type does not match");
     }
   }
 }

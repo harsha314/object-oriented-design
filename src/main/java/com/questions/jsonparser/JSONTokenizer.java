@@ -11,21 +11,27 @@ public class JSONTokenizer {
 
   public Token nextToken() {
     this.skipWhiteSpace();
-    if (index > input.length())
+    if (index >= input.length())
       return new Token(TokenType.EOF, null);
     char ch = input.charAt(index);
     switch (ch) {
       case '[':
+        ++index;
         return new Token(TokenType.LEFT_BRACKET, "[");
       case ']':
+        ++index;
         return new Token(TokenType.RIGHT_BRACKET, "]");
       case '{':
+        ++index;
         return new Token(TokenType.LEFT_CURLY_BRACKET, "{");
       case '}':
+        ++index;
         return new Token(TokenType.RIGHT_CURLY_BRACKET, "}");
       case ':':
+        ++index;
         return new Token(TokenType.COLON, ":");
       case ',':
+        ++index;
         return new Token(TokenType.COMMA, ",");
       case '"':
         return readString();
