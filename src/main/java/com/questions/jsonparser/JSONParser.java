@@ -25,12 +25,15 @@ public class JSONParser {
         return parseArray();
       case STRING:
         String s = current.getContent();
+        current = jsonTokenizer.nextToken();
         return s;
       case NUMBER:
         double num = Double.parseDouble(current.getContent());
+        current = jsonTokenizer.nextToken();
         return num;
       case BOOLEAN:
         boolean value = Boolean.parseBoolean(current.getContent());
+        current = jsonTokenizer.nextToken();
         return value;
       case NULL:
         current = jsonTokenizer.nextToken();
@@ -58,20 +61,24 @@ public class JSONParser {
       current = jsonTokenizer.nextToken();
       Object value = parseValue();
       map.put(key, value);
+      // current = jsonTokenizer.nextToken();
       if (current.getTokenType() == TokenType.COMMA) {
         current = jsonTokenizer.nextToken();
       } else
         break;
     } while (true);
+    expect(TokenType.RIGHT_CURLY_BRACKET);
+    current = jsonTokenizer.nextToken();
     return map;
   }
 
   private List<Object> parseArray() {
     List<Object> list = new ArrayList<>();
     expect(TokenType.LEFT_BRACKET);
+    current = jsonTokenizer.nextToken();
 
     if (current.getTokenType() == TokenType.RIGHT_BRACKET) {
-      jsonTokenizer.nextToken();
+      current = jsonTokenizer.nextToken();
       return list;
     }
     do {
@@ -81,6 +88,8 @@ public class JSONParser {
       } else
         break;
     } while (true);
+    expect(TokenType.RIGHT_BRACKET);
+    current = jsonTokenizer.nextToken();
     return list;
   }
 

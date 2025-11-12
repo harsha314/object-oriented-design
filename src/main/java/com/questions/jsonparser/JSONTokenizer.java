@@ -65,7 +65,6 @@ public class JSONTokenizer {
     while (index < input.length() && input.charAt(index) != '"') {
       sb.append(input.charAt(index));
       ++index;
-
     }
     ++index;
     return new Token(TokenType.STRING, sb.toString());
