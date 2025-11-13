@@ -11,10 +11,12 @@ public class Snake implements Portal {
     this.endCell = end;
   }
 
+  @Override
   public int start() {
     return this.startCell;
   }
 
+  @Override
   public int end() {
     return this.endCell;
   }

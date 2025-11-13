@@ -12,4 +12,25 @@ public class Board {
     this.portals = portals;
     this.players = players;
   }
+
+  public int size() {
+    return this.cells;
+  }
+
+  public boolean hasPortal(int cell) {
+    for (Portal p : portals) {
+      if (p.start() == cell)
+        return true;
+    }
+    return false;
+  }
+
+  public int portalEnd(int cell) {
+    for (Portal p : portals) {
+      if (p.start() == cell) {
+        return p.end();
+      }
+    }
+    return -1;
+  }
 }

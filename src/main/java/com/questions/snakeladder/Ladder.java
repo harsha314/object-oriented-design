@@ -1,6 +1,6 @@
 package com.questions.snakeladder;
 
-public class Ladder {
+public class Ladder implements Portal {
   private int startCell;
   private int endCell;
 
@@ -11,10 +11,12 @@ public class Ladder {
     this.endCell = end;
   }
 
+  @Override
   public int start() {
     return this.startCell;
   }
 
+  @Override
   public int end() {
     return this.endCell;
   }
