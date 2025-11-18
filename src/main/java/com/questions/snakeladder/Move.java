@@ -13,4 +13,6 @@ public class Move {
     this.finalCell = finalCell;
     this.effects = effects;
   }
+
+  // public
 }

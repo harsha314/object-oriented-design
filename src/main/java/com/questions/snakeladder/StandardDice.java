@@ -11,6 +11,11 @@ public class StandardDice implements Dice {
     this.bound = bound;
   }
 
+  public StandardDice(int bound, int seed) {
+    this(bound);
+    this.random = new Random(seed);
+  }
+
   public int roll() {
     return 1 + random.nextInt(bound);
   }

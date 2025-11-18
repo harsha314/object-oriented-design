@@ -3,7 +3,7 @@
 ========================
 BEGINNER LEVEL
 ========================
-[ ] Design (LLD) Tic-Tac-Toe - Machine Coding - Video
+[x] Design (LLD) Tic-Tac-Toe - Machine Coding - Video
 [ ] Design (LLD) Snake and Ladder Game - Machine Coding - Video
 [ ] Design (LLD) Tetris Game - Machine Coding - Video
 [ ] Design (LLD) Minesweeper - Machine Coding - Video
@@ -26,7 +26,7 @@ INTERMEDIATE LEVEL
 [ ] Design (LLD) Sublime Text IDE - Machine Coding
 [ ] Design (LLD) Ngrok Tool - Machine Coding
 [ ] Design (LLD) Rate Limiter - Machine Coding
-[ ] Design (LLD) Thread Pool - Machine Coding
+[x] Design (LLD) Thread Pool - Machine Coding
 [ ] Design OYO/Airbnb - Part 1: Database Modelling
 [ ] Design (LLD) Google Calendar Database Model
 [ ] Design (LLD) Google Authenticator - Machine Coding
