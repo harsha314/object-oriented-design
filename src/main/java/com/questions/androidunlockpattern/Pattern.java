@@ -8,4 +8,8 @@ public class Pattern {
   public Pattern(List<Point> points) {
     this.points = points;
   }
+
+  public List<Point> getPoints() {
+    return points;
+  }
 }
