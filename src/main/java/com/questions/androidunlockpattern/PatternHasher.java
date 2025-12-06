@@ -14,15 +14,8 @@ public class PatternHasher {
   private static final int ITER = 100_000;
   private static final int KEYLEN = 256;
 
-  public static class Hashed {
-    public String saltBase64;
-    public String hashBase64;
-
-    public Hashed(String s, String h) {
-      this.saltBase64 = s;
-      this.hashBase64 = h;
-    }
-  }
+  public static record Hashed(String saltBase64, String hashBase64) {
+  };
 
   public static Hashed hash(List<Integer> ids) throws Exception {
     byte[] salt = new byte[16];

@@ -1,17 +1,5 @@
 package com.questions.androidunlockpattern;
 
-public class Point {
-  private int x;
+public record Point(int X) {
 
-  public Point(int x) {
-    this.x = x;
-  }
-
-  public int getX() {
-    return x;
-  }
-
-  public void setX(int x) {
-    this.x = x;
-  }
 }

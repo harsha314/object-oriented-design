@@ -1,17 +1,21 @@
 package com.questions.androidunlockpattern;
 
-public class PatternStore {
-  private String hashedPattern;
+import java.util.Optional;
 
-  public PatternStore(PatternHasher patternHasher) {
-    // this.patternHasher = patternHasher;
+public interface PatternStore {
+  public static record PatternInfo(String saltBase64, String hashBase64) {
   }
 
-  public void store(Pattern pattern) {
-
+  public static record LockInfo(int attempts, long lockedUntilMilliseconds) {
   }
 
-  public boolean verifyPattern(Pattern pattern) {
-    return false;
-  }
+  void savePattern(String userId, String saltBase64, String hashBase64);
+
+  Optional<PatternInfo> getPatternInfo(String userId);
+
+  void deletePattern(String userId);
+
+  void saveAttempts(String userId, int attempts, long lockedUntilMilliseconds);
+
+  LockInfo getAttempts(String userId);
 }
