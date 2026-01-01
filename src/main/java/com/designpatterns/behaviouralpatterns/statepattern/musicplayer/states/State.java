@@ -1,15 +1,17 @@
 package com.designpatterns.behaviouralpatterns.statepattern.musicplayer.states;
 
-import com.designpatterns.behaviouralpatterns.statepattern.musicplayer.ui.Player;
-
 public abstract class State {
-  Player player;
 
-  public abstract String onLock();
+  public static State READY_STATE = new ReadyState();
+  public static State PLAYING_STATE = new PlayingState();
+  public static State PAUSED_STATE = new PausedState();
+  public static State LOCKED_STATE = new LockedState();
 
-  public abstract String onPlay();
+  public abstract void lock();
 
-  public abstract String onPrevious();
+  public abstract void play();
 
-  public abstract String onNext();
+  public abstract void pause();
+
+  public abstract void resume();
 }

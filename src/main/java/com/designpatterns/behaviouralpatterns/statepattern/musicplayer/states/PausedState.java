@@ -1,6 +1,6 @@
 package com.designpatterns.behaviouralpatterns.statepattern.musicplayer.states;
 
-public class LockedState extends State {
+public class PausedState extends State {
 
   @Override
   public void lock() {

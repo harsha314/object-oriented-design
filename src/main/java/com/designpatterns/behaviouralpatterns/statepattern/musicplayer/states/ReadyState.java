@@ -1,29 +1,31 @@
 package com.designpatterns.behaviouralpatterns.statepattern.musicplayer.states;
 
+import com.designpatterns.behaviouralpatterns.statepattern.musicplayer.Player;
+
 public class ReadyState extends State {
 
   @Override
-  public String onLock() {
+  public void lock() {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'onLock'");
+    throw new UnsupportedOperationException("Unimplemented method 'lock'");
   }
 
   @Override
-  public String onPlay() {
+  public void play() {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'onPlay'");
+    throw new UnsupportedOperationException("Unimplemented method 'play'");
   }
 
   @Override
-  public String onPrevious() {
+  public void pause() {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'onPrevious'");
+    throw new UnsupportedOperationException("Unimplemented method 'pause'");
   }
 
   @Override
-  public String onNext() {
+  public void resume() {
     // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'onNext'");
+    throw new UnsupportedOperationException("Unimplemented method 'resume'");
   }
 
 }
