@@ -1,6 +1,5 @@
 package com.designpatterns.behaviouralpatterns.statepattern.musicplayer;
 
-import com.designpatterns.behaviouralpatterns.statepattern.musicplayer.states.State;
 import com.designpatterns.behaviouralpatterns.statepattern.musicplayer.states.StateContext;
 
 public class Player {
@@ -10,32 +9,24 @@ public class Player {
 
   public Player() {
     this.stateContext = new StateContext();
+    this.queue = new PlayerQueue();
   }
 
   public void playTrack(int trackId) {
     queue.playTrack(trackId);
-    stateContext.setState(State.PLAYING_STATE);
+    stateContext.play();
   }
 
   public void pausePlayer() {
-    if (!(stateContext.getState().equals(State.PLAYING_STATE))) {
-      return;
-    }
-    stateContext.setState(State.PAUSED_STATE);
+    stateContext.pause();
   }
 
   public void resumePlayer() {
-    if (!(stateContext.getState().equals(State.PAUSED_STATE))) {
-      return;
-    }
-    stateContext.setState(State.PLAYING_STATE);
+    stateContext.resume();
   }
 
   public void lockPlayer() {
-    if (!(stateContext.getState().equals(State.PLAYING_STATE))) {
-      return;
-    }
-    stateContext.setState(State.LOCKED_STATE);
+    stateContext.lock();
   }
 
   public void playNext() {

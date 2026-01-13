@@ -2,16 +2,15 @@ package com.designpatterns.behaviouralpatterns.statepattern.musicplayer.states;
 
 public abstract class State {
 
-  public static State READY_STATE = new ReadyState();
-  public static State PLAYING_STATE = new PlayingState();
-  public static State PAUSED_STATE = new PausedState();
-  public static State LOCKED_STATE = new LockedState();
+  public void lock() {
+  }
 
-  public abstract void lock();
+  public void play() {
+  }
 
-  public abstract void play();
+  public void pause() {
+  }
 
-  public abstract void pause();
-
-  public abstract void resume();
+  public void resume() {
+  }
 }
