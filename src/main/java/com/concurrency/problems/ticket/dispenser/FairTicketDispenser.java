@@ -8,14 +8,20 @@ public class FairTicketDispenser implements TicketDispenser {
     private int count = 10_000;
 
     public Boolean purchaseTicket(String user) {
-        if(count == 0)
-            return false ;
+        lock.lock() ;
+        
         try {
-            lock.lock() ;
+            if(count == 0)
+                return false ;
             --count ;
             return true ;
         } finally {
             lock.unlock();
         }
+    }
+
+    @Override
+    public long getRemainingTickets() {
+        return this.count ;
     }
 }

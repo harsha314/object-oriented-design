@@ -5,4 +5,5 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public interface TicketDispenser {
     Boolean purchaseTicket(String user);
+    long getRemainingTickets();
 }
