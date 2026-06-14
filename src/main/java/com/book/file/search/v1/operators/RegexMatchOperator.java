@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class RegexMatchOperator<T extends String> implements ComparisonOperator<T> {
 
     @Override
-    public boolean isMatch(T attributeValue, T expectedValue) {
+    public boolean isMatch(T expectedValue, T attributeValue) {
         final Pattern p = Pattern.compile(expectedValue) ;
         return p.matcher(attributeValue).matches() ;
     }

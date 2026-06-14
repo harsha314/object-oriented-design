@@ -1,5 +1,7 @@
 package com.book.file.search.v1;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Set;
 
 import lombok.Getter;
@@ -11,6 +13,14 @@ public class File {
     private String owner ;
     private String filename ;
     private Set<File> entries ;
+
+    public File(Boolean isDirectory, int size, String owner, String filename) {
+        this.isDirectory = isDirectory ;
+        this.size = size ;
+        this.owner = owner ;
+        this.filename = filename ;
+        this.entries = new HashSet<>() ;
+    }
     
     public Object extract(FileAttribute attributeName) {
         switch (attributeName) {

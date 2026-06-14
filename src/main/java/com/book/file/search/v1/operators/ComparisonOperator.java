@@ -1,5 +1,5 @@
 package com.book.file.search.v1.operators;
 
 public interface ComparisonOperator<T> {
-    boolean isMatch(T a, T b);
+    boolean isMatch(T expectedValue, T actualValue);
 }

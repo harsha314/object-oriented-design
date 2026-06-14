@@ -5,9 +5,12 @@ import java.util.List;
 public class AndPredicate implements CompositePredicate {
     private List<Predicate> operands ;
 
+    public AndPredicate(final List<Predicate> operands) {
+        this.operands = operands ;
+    }
+
     public boolean isMatch(File file) {
         return operands.stream()
-            .map((predicate) -> predicate.isMatch(file))
-            .reduce(true, Boolean::logicalAnd) ;
+            .allMatch(predicate -> predicate.isMatch(file)) ;
     }
 }
