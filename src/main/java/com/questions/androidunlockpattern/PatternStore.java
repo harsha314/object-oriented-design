@@ -1,5 +1,6 @@
 package com.questions.androidunlockpattern;
 
+import java.lang.management.LockInfo;
 import java.util.Optional;
 
 public interface PatternStore {
