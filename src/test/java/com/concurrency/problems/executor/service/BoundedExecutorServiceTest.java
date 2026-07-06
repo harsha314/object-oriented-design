@@ -13,7 +13,7 @@ class BoundedExecutorServiceTest {
     void testBoundedQueue() throws Exception {
         int workers = 4;
 //        ThreadPoolExecutor pool = (ThreadPoolExecutor) Executors.newFixedThreadPool(workers);
-        try (ThreadPoolExecutor pool = Main.bounded(workers)) {
+        try (ThreadPoolExecutor pool = CustomExecutorService.bounded(workers)) {
             CountDownLatch block = new CountDownLatch(1);        // gate to pin workers
             CountDownLatch allWorkersBusy = new CountDownLatch(workers);
 

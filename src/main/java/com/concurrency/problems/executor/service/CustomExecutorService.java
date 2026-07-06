@@ -2,7 +2,7 @@ package com.concurrency.problems.executor.service;
 
 import java.util.concurrent.*;
 
-public class Main {
+public class CustomExecutorService {
     public static void main(String[] args) {
         Long startTime = System.currentTimeMillis();
 //        unbounded();
